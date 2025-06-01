@@ -94,8 +94,7 @@ const ImageResult: React.FC<ImageResultProps> = ({ originalImage, processedImage
             </div>
           </div>
           
-          <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-between items-stretch sm:items-center w-full">
-            {/* Removed Like and Share buttons */}
+          <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center items-center w-full mt-4">
             <div className="flex flex-col gap-2 sm:flex-row sm:gap-3 w-full sm:w-auto">
               <button
                 onClick={onReset}
@@ -112,20 +111,6 @@ const ImageResult: React.FC<ImageResultProps> = ({ originalImage, processedImage
               </button>
             </div>
           </div>
-          
-          {!isAuthenticated && (
-            <div className="mt-6 bg-purple-50 border border-purple-100 rounded-lg p-4 text-center">
-              <p className="text-purple-800 mb-2">
-                Want HD downloads and batch processing?
-              </p>
-              <a
-                href="/signup"
-                className="inline-block btn btn-primary py-2"
-              >
-                Sign Up for Free
-              </a>
-            </div>
-          )}
         </div>
       </div>
     </div>
